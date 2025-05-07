@@ -4,6 +4,8 @@
 #include "Framework/BaseLevel.h"
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
+#include "Player.h"
+#include "Enemy.h"
 #include <string.h>
 #include <iostream>
 
@@ -17,6 +19,8 @@ public:
 	void update(float dt) override;
 	void render() override;
 
+	Player p;
+	Enemy e;
 private:
 	// Level objects
 	GameObject testSprite;
